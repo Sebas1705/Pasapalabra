@@ -1,0 +1,478 @@
++-------------------------------+
+|Datos de palabras por defecto: |
++-------------------------------+
+
++-----------------------------------------------------------------+
+Lista A:
+ Palabra: Ahorrar
+ Def1: Guardar dinero como previsión para necesidades futuras
+ Def2: 
+ Palabra: Asalto
+ Def1: Acción y efecto de asaltar
+ Def2: Variedad del juego de tres en raya, en el que el asaltante dispone de 24 fichas y el defensor solo de 2
+ Palabra: Arado
+ Def1: Instrumento de agricultura que, movido por fuerza animal o mecánica, sirve para labrar la tierra abriendo surcos en ella.
+ Def2: 
+ Palabra: Aplanar
+ Def1: Dejar a alguien pasmado o estupefacto con alguna razón o novedad inopinada
+ Def2: 
+ Palabra: Amago
+ Def1: Hacer ademán de herir o golpear
+ Def2:  Amenazar a alguien con algún mal o mostrar intención de hacérselo
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista B:
+ Palabra: Beca
+ Def1: Subvención para realizar estudios o investigaciones
+ Def2: 
+ Palabra: Besar
+ Def1: Tocar u oprimir con un movimiento de labios a alguien o algo como expresión de amor, deseo o reverencia, o como saludo
+ Def2: 
+ Palabra: Búho
+ Def1: Ave rapaz nocturna, indígena de España, de unos 40 cm de altura, de color mezclado de rojo y negro, calzada de plumas, con el pico corvo, los ojos grandes y colocados en la parte anterior de la cabeza, sobre la cual tiene unas plumas alzadas que parecen orejas
+ Def2: Persona huraña
+ Palabra: Basto
+ Def1: Palo de los cuatro que constituyen la baraja española, cuyas cartas llevan estampados uno o varios leños en forma de porras toscas
+ Def2:  Grosero, tosco, sin pulimento
+ Palabra: Biblia
+ Def1: Conjunto de Escrituras Sagradas formado por el Antiguo y el Nuevo Testamento, de las cuales el Antiguo Testamento es común a judíos y cristianos, y el Nuevo Testamento es aceptado solo por los cristianos
+ Def2: Obra que reúne los conocimientos o ideas relativos a una materia y que es considerada por sus seguidores modelo ideal
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista C:
+ Palabra: Culpar
+ Def1: Atribuir o echar la culpa a alguien
+ Def2: 
+ Palabra: Chorizo
+ Def1: Coloquialmente, ratero, ladronzuelo
+ Def2: Embutido tipoco español
+ Palabra: Caballa
+ Def1: Pez teleósteo, de 30 a 40 cm de largo, de color azul y verde con rayas negras por el lomo, que vive en bancos en el Atlántico Norte y es apreciado en la industria conservera
+ Def2: 
+ Palabra: Casa
+ Def1: Edificio para habitar
+ Def2: Edificio de una o pocas plantas destinado a vivienda unifamiliar, en oposición a piso
+ Palabra: Comanda
+ Def1: Pedido que se hace al camarero en un restaurante
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista D:
+ Palabra: Deportar
+ Def1: Desterrar a alguien de algún lugar, por lo regular extranjero, y confinarlo allí por razones políticas o como castigo
+ Def2: 
+ Palabra: Debatir
+ Def1: Dicho de dos o más personas: Discutir un tema con opiniones diferentes
+ Def2: Luchar o combatir
+ Palabra: Debilitar
+ Def1: Disminuir la fuerza, el vigor o el poder de alguien o algo
+ Def2: Disminuir la energía articulatoria con la que se emite un sonido del habla
+ Palabra: Doblez
+ Def1: Parte que se dobla o pliega en una cosa
+ Def2: Señal que queda en la parte por donde se ha doblado algo
+ Palabra: Dualidad
+ Def1: Existencia de dos caracteres o fenómenos distintos en una misma persona o en un mismo estado de cosas
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista E:
+ Palabra: Envoltorio
+ Def1: Capa exterior que cubre natural o artificialmente una cosa
+ Def2: 
+ Palabra: Esfuerzo
+ Def1: Empleo enérgico de la fuerza física contra algún impulso o resistencia
+ Def2: Empleo enérgico del vigor o actividad del ánimo para conseguir algo venciendo dificultades
+ Palabra: Ego
+ Def1: En el psicoanálisis de Freud, instancia psíquica que se reconoce como yo, parcialmente consciente, que controla la motilidad y media entre los instintos del ello, los ideales del superego y la realidad del mundo exterior
+ Def2: Exceso de autoestima
+ Palabra: Equipo
+ Def1: Grupo de personas organizado para una investigación o servicio determinados
+ Def2: 
+ Palabra: Estadio
+ Def1: Recinto con grandes dimensiones con graderías para los espectadores, destinado a competiciones deportivas
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista F:
+ Palabra: Frenar
+ Def1: Moderar o parar el movimiento de algo
+ Def2: 
+ Palabra: Facial
+ Def1: Perteneciente o relativo a la cara o el rostro
+ Def2: 
+ Palabra: Flama
+ Def1: Reflejo o reverberación de la llama
+ Def2: 
+ Palabra: Fracturar
+ Def1: Romper o quebrantar con violencia algo
+ Def2: 
+ Palabra: Fiable
+ Def1: Dicho de una persona: Que es digna de confianza
+ Def2: Que ofrece seguridad o buenos resultados
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista G:
+ Palabra: Grupo
+ Def1: Pluralidad de seres o cosas que forman un conjunto
+ Def2: 
+ Palabra: Grabar
+ Def1: Señalar con incisión o abrir y labrar en hueco o en relieve sobre una superficie un letrero, una figura o una representación de cualquier objeto
+ Def2: Captar y almacenar imágenes, sonidos o datos en un soporte, de manera que se puedan reproducir
+ Palabra: Glacial
+ Def1: De temperatura muy fría
+ Def2: 
+ Palabra: Gacela
+ Def1: Antílope de los de talla mediana que habita en zonas semidesérticas o de sabana de África y el Oriente Próximo, que se caracteriza por su agilidad y gracia corporal y por tener cuernos tanto los machos como las hembras
+ Def2: 
+ Palabra: Goma
+ Def1: Sustancia viscosa e incristalizable que naturalmente, o mediante incisiones, fluye de diversos vegetales, después de seca es soluble en agua e insoluble en el alcohol y el éter, y que disuelta en agua sirve para pegar o adherir cosas
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista H:
+ Palabra: Huelga
+ Def1: Interrupción colectiva de la actividad laboral por parte de los trabajadores con el fin de reivindicar ciertas condiciones o manifestar una protesta 
+ Def2: 
+ Palabra: Hiato
+ Def1: Secuencia de dos vocales que se pronuncian en sílabas distintas
+ Def2: Solución de continuidad, interrupción o separación espacial o temporal
+ Palabra: Habilidad
+ Def1: Gracia y destreza en ejecutar algo que sirve de adorno a la persona, como bailar, montar a caballo
+ Def2: Capacidad y disposición para algo
+ Palabra: Hechicero
+ Def1: Que practica la hechicería (dar solucion en genero masculino)
+ Def2: 
+ Palabra: Huida
+ Def1: Ensanche y holgura que se deja en mechinales u otros agujeros para poder meter y sacar con facilidad maderos
+ Def2: Acción de huir
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista I:
+ Palabra: Indignar
+ Def1: Irritar, enfadar vehementemente a alguien
+ Def2: 
+ Palabra: Isla
+ Def1: Porción de tierra rodeada de agua por todas partes
+ Def2: En aeropuertos, estaciones, vías públicas, etc., recinto o zona claramente separada del espacio circundante
+ Palabra: Inalcanzable
+ Def1: Que no se puede alcanzar
+ Def2: 
+ Palabra: Ideal
+ Def1: Modelo perfecto que sirve de norma en cualquier dominio
+ Def2: Que no existe sino en el pensamiento
+ Palabra: Imagen
+ Def1: Figura, representación, semejanza y apariencia de algo
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista J:
+ Palabra: Jubilado
+ Def1: Persona que ha dejado de trabajar y percibe una pensión
+ Def2: 
+ Palabra: Jadear
+ Def1: Respirar anhelosamente por efecto de algún trabajo o ejercicio impetuoso
+ Def2: 
+ Palabra: Jugar
+ Def1: Hacer algo con alegría con el fin de entretenerse, divertirse o desarrollar determinadas capacidades
+ Def2: Practicar ciertos deportes, como tenis o fútbol
+ Palabra: Jengibre
+ Def1: Planta de la India, de la familia de las cingiberáceas, con hojas radicales, lanceoladas, casi lineales, flores en espiga, de corola purpúrea, sobre un escapo central de 40 a 60 cm de alto, fruto capsular bastante pulposo y con varias semillas, y rizoma del grueso de un dedo, algo aplastado, nudoso y ceniciento por fuera, blanco amarillento por dentro, de olor aromático y de sabor acre y picante como el de la pimienta, y que se usa en medicina y como especia
+ Def2: 
+ Palabra: Justicia
+ Def1: Principio moral que lleva a determinar que todos deben vivir honestamente
+ Def2: Derecho, razón, equidad
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista L:
+ Palabra: liberar
+ Def1: Hacer que alguien o algo quede libre, eximir a alguien de una obligación 
+ Def2: 
+ Palabra: Llamamiento
+ Def1: Acción de llamar
+ Def2: 
+ Palabra: Lanza
+ Def1: Arma ofensiva consistente en un asta o palo largo en cuya extremidad está fijo un hierro puntiagudo y cortante a manera de cuchilla
+ Def2: Vara de madera que, unida por uno de sus extremos al juego delantero de un carruaje, sirve para darle dirección, y a cuyos lados se enganchan las caballerías del tronco, que han de hacer el tiro
+ Palabra: Lugarteniente
+ Def1: Persona que tiene autoridad y poder para hacer las veces de otro en un cargo o empleo
+ Def2: 
+ Palabra: Lucifer
+ Def1: Hombre soberbio, encolerizado y maligno
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista M:
+ Palabra: Manifestacion
+ Def1: Reunión pública, generalmente al aire libre, en la que los asistentes reclaman algo o expresan su protesta por algo
+ Def2: 
+ Palabra: Monasterio
+ Def1: Casa, ordinariamente fuera de poblado, donde viven monjes en comunidad
+ Def2: 
+ Palabra: Meca
+ Def1: Lugar que atrae por ser centro donde una actividad determinada tiene su mayor o mejor cultivo
+ Def2: 
+ Palabra: Micra
+ Def1: Unidad de longitud equivalente a la millonésima (10−6) parte del metro
+ Def2: 
+ Palabra: Musa
+ Def1: Cada una de las nueve deidades que, según el mito, habitaban, presididas por Apolo, en el Parnaso o en el Helicón y protegían las ciencias y las artes liberales
+ Def2: Inspiración del artista o escritor
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista N:
+ Palabra: Nacionalidad
+ Def1: Estado propio de la persona nacida o naturalizada en una nación
+ Def2: 
+ Palabra: Nube
+ Def1: Agregado visible de minúsculas gotitas de agua, de cristales de hielo o de ambos, suspendido en la atmósfera y producido por la condensación de vapor de agua
+ Def2: Agrupación o cantidad muy grande de algo que va por el aire
+ Palabra: Nudillo
+ Def1: Parte exterior de cualquiera de las junturas de los dedos, donde se unen los huesos de que se componen
+ Def2: Cada uno de los puntos que forman la costura de las medias, los cuales se hacen dando una vuelta a la hebra del derecho y otra en sentido contrario, con lo cual queda al revés la carrera
+ Palabra: Noble
+ Def1: Preclaro, ilustre, generoso
+ Def2: 
+ Palabra: Nido
+ Def1: Especie de lecho que forman las aves con hierbas, pajas, plumas u otros materiales blandos, para poner sus huevos y criar los pollos. Unas utilizan con tal fin los agujeros de las peñas, ribazos, troncos o edificios; otras lo construyen de ramas, o de barro, o de sustancias gelatinosas, dándole forma cóncava, y lo suspenden de los árboles o lo asientan en ellos, en las rocas o en las paredes, y algunas prefieren el suelo sin otro abrigo que la hierba y la tierra
+ Def2: Lugar donde ponen las aves
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista Ñ:
+ Palabra: Ñu
+ Def1: Mamífero rumiante africano de la familia de los antílopes, de color pardo grisáceo, cuya cabeza recuerda la de un toro
+ Def2: Animal que suele ir en manada y suele ser cazado por depredadpres como los leones
+ Palabra: Ñoño
+ Def1: Dicho de una persona: Sumamente apocada y de corto ingenio (la respuesta se debe dar en genero masculino)
+ Def2: Dicho de una cosa: Sosa, de poca sustancia
+ Palabra: Ñangal
+ Def1: Conjunto de raíces del mangle
+ Def2: Barro de la zona pantanosa próxima al mar
+ Palabra: Ñorbo
+ Def1: Flor pequeña, muy fragante, de una pasionaria muy común como adorno en las ventanas
+ Def2: 
+ Palabra: Ñurdo
+ Def1: Dicho de una persona: Que pertenece a algún partido político de izquierdas o de ideas radicales (la respuesta debe realizarse en geneero masculino)
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista O:
+ Palabra: Organizacion
+ Def1: Asociación de personas regulada por un conjunto de normas en función de determinados fines
+ Def2: 
+ Palabra: Orgullo
+ Def1: Sentimiento de satisfacción por los logros, capacidades o méritos propios o por algo en lo que una persona se siente concernida
+ Def2: 
+ Palabra: Oscuridad
+ Def1: Falta de luz para percibir las cosas
+ Def2: Falta de luz y conocimiento en las facultades intelectuales o espirituales
+ Palabra: Ornitorrinco
+ Def1: Mamífero del orden de los monotremas, del tamaño aproximadamente de un conejo, con hocico semejante al pico de un pato, pies palmeados, con el cuerpo y la cola, larga y aplanada, cubiertos de pelo gris muy fino, que vive en Australia y se alimenta de larvas, de insectos y de pececillos
+ Def2: 
+ Palabra: Ormitir
+ Def1: Abstenerse de hacer algo
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista P:
+ Palabra: Promover
+ Def1: Iniciar o impulsar una idea o proyecto procurando su logro 
+ Def2: 
+ Palabra: Poste
+ Def1: Madero, piedra o columna colocada verticalmente para servir de apoyo o de señal
+ Def2: Cada uno de los dos palos verticales de la portería del fútbol y de otros deportes
+ Palabra: Pinchar
+ Def1: Clavar algo punzante en alguien o algo
+ Def2: 
+ Palabra: Prefijar
+ Def1: Determinar, señalar o fijar anticipadamente algo
+ Def2: 
+ Palabra: Panal
+ Def1: Conjunto de celdillas prismáticas hexagonales de cera, colocadas en series paralelas, que las abejas forman dentro de la colmena para depositar la miel
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista Q:
+ Palabra: Quad
+ Def1: Vehículo todoterreno de cuatro ruedas similar a una motocicleta
+ Def2: 
+ Palabra: Quiebro
+ Def1: Ademán que se hace con el cuerpo, como doblándolo por la cintura
+ Def2: 
+ Palabra: Queso
+ Def1: Producto obtenido por maduración de la cuajada de la leche con características propias para cada uno de los tipos según su origen o método de fabricación
+ Def2: Forma bulgar de referirse al pie
+ Palabra: Quemadura
+ Def1: Descomposición de un tejido orgánico, producida por el contacto del fuego o de una sustancia cáustica o corrosiva
+ Def2: Señal, llaga, ampolla o impresión que hace el fuego o una cosa muy caliente o cáustica aplicada a otra
+ Palabra: Quiebra
+ Def1: Rotura de una superficie de cierta dureza o rigidez
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista R:
+ Palabra: Reciclar
+ Def1: Someter material usado a un proceso para que se pueda volver a utilizar
+ Def2: 
+ Palabra: Reafirmar
+ Def1: Reforzar una postura o una condición
+ Def2: Afirmar de nuevo, confirmar
+ Palabra: Reforzar
+ Def1: Engrosar o añadir nuevas fuerzas o fomento a algo
+ Def2: Fortalecer o reparar lo que padece ruina o detrimento
+ Palabra: Rotar
+ Def1: Seguir un turno en cargos, comisiones, etc
+ Def2: 
+ Palabra: Ramal
+ Def1: Cada uno de los cabos de que se componen las cuerdas, sogas, pleitas y trenzas
+ Def2: Cada uno de los diversos tiros que concurren en la misma meseta de una escalera
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista S:
+ Palabra: Suprimir
+ Def1: Hacer cesar, hacer desaparecer, anular
+ Def2: 
+ Palabra: Sastre
+ Def1: Persona que tiene por oficio cortar y coser trajes, principalmente de hombre
+ Def2: 
+ Palabra: Suspiro
+ Def1: Aspiración fuerte y prolongada seguida de una espiración, acompañada a veces de un gemido y que suele denotar pena, ansia o deseo
+ Def2: 
+ Palabra: Soldadura
+ Def1: Material que sirve y está preparado para soldar
+ Def2: 
+ Palabra: Sentadilla
+ Def1: Ejercicio que consiste en flexionar las piernas bajando el cuerpo recto hasta quedar en cuclillas
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista T:
+ Palabra: Tasa
+ Def1: Tributo que se impone a la utilización de ciertos servicios, o al ejercicio de ciertas actividades
+ Def2: 
+ Palabra: Trono
+ Def1: Asiento con gradas y dosel, que usan los monarcas y otras personas de alta dignidad, especialmente en los actos de ceremonia
+ Def2: Dignidad de rey o soberano
+ Palabra: Tregua
+ Def1: Cese temporal de hostilidades
+ Def2: Interrupción, descanso
+ Palabra: Tumor
+ Def1: Masa de células transformadas, con crecimiento y multiplicación anormales
+ Def2: Hinchazón y bulto que se forma anormalmente en alguna parte del cuerpo de un animal
+ Palabra: Tic
+ Def1: Movimiento convulsivo, que se repite con frecuencia, producido por la contracción involuntaria de uno o varios músculos
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista U:
+ Palabra: Urgencia
+ Def1:  Necesidad o falta apremiante, inmediata obligación de hacer algo
+ Def2: 
+ Palabra: Umbral
+ Def1: Parte inferior o escalón, por lo común de piedra y contrapuesto al dintel, en la puerta o entrada de una casa
+ Def2: Valor mínimo de una magnitud a partir del cual se produce un efecto determinado
+ Palabra: Ulterior
+ Def1: Situado de la parte de allá de un sitio o territorio
+ Def2: Que se dice, sucede o se ejecuta después de otra cosa
+ Palabra: Utilizar
+ Def1: Hacer que algo sirva para un fin
+ Def2: 
+ Palabra: Ungir
+ Def1: Aplicar a alguien o algo aceite u otra materia pingüe, extendiéndola superficialmente
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista V:
+ Palabra: Vivienda
+ Def1: Lugar cerrado y cubierto construido para ser habitado por personas
+ Def2: 
+ Palabra: Visibilidad
+ Def1: Mayor o menor distancia a que, según las condiciones atmosféricas, pueden reconocerse o verse los objetos
+ Def2: 
+ Palabra: Vuelta
+ Def1: Movimiento de una cosa alrededor de un punto, o girando sobre sí misma, hasta invertir su posición primera, o hasta recobrarla de nuevo
+ Def2: Cada una de las circunvoluciones de una cosa alrededor de otra a la cual se aplica
+ Palabra: Visir
+ Def1: Ministro de un soberano musulmán
+ Def2: 
+ Palabra: Veraz
+ Def1: Que dice, usa o profesa siempre la verdad
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista X:
+ Palabra: Xenofobia 
+ Def1: Fobia a lo extranjero o a los extranjeros
+ Def2: 
+ Palabra: Xerocopia 
+ Def1: Copia fotográfica obtenida por medio de la xerografía
+ Def2: 
+ Palabra: Xantina
+ Def1: Compuesto derivado de la purina, que tiene efectos estimulantes sobre el sistema nervioso y el corazón, diuréticos y broncodilatadores
+ Def2: 
+ Palabra: Xerografiar
+ Def1: Reproducir textos o imágenes por medio de la xerografía
+ Def2: 
+ Palabra: Xeroteca
+ Def1: Archivo formado por xerocopias, normalmente ordenadas y encuadernadas
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista Y:
+ Palabra: Yacal
+ Def1: Árbol de la familia de las dipterocarpáceas, que alcanza hasta 20 m de altura y cuya madera se emplea en construcciones y en ebanistería, puesto que no se ve afectada por la carcoma
+ Def2: 
+ Palabra: Yak
+ Def1: Bóvido que habita en las altas montañas del Tíbet, notable por las largas lanas que le cubren las patas y la parte inferior del cuerpo. En estado salvaje es de color oscuro, pero entre los domésticos abundan los blancos
+ Def2: 
+ Palabra: Yegua
+ Def1: Hembra del caballo
+ Def2: 
+ Palabra: Yihad
+ Def1: Guerra islámica
+ Def2: En la religión islámica, esfuerzo de superación espiritual
+ Palabra: Yonqui
+ Def1: En la jerga de la droga, adicto a la heroína
+ Def2: 
++-----------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+Lista Z:
+ Palabra: Zoologico
+ Def1: Lugar en que se conservan, cuidan y crían diversas especies animales con fines didácticos o de entretenimiento
+ Def2: 
+ Palabra: Zaca
+ Def1: En minería, odre con que desaguan los pozos
+ Def2: 
+ Palabra: Zambullir
+ Def1: Meter debajo del agua con ímpetu o de golpe
+ Def2: Esconderse o meterse en alguna parte, o cubrirse con algo
+ Palabra: Zumo
+ Def1: Líquido de las hierbas, flores, frutas u otras cosas semejantes, que se saca exprimiéndolas o majándolas
+ Def2: Jugo
+ Palabra: Zumbar
+ Def1: Golpe o porrazo que se da a alguien
+ Def2: Acción y efecto de zumbar
++-----------------------------------------------------------------+

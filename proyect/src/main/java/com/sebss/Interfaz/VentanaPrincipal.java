@@ -20,31 +20,40 @@ import javax.swing.event.*;
  */
 public class VentanaPrincipal extends JFrame {
 
-    Almacen_Jugadores aJugadores;
-    Almacen_Partidas aPartidas;
-    Almacen_Palabras aPalabras;
-    Jugador jugador1;
-    Jugador jugador2;
-    Jugador jModificar;
-    Partida pModificar;
-    JDialog dialogActual;
-    final String ARCHIVO_AJUGADORES = "data\\bin\\Jugadores.data";
-    final String ARCHIVO_APARTIDAS = "data\\bin\\Partidas.data";
-    final String ARCHIVO_APALABRAS = "data\\bin\\Palabras.data";
-    final String ARCHIVO_TXT = "data\\bin\\Clasificacion.txt";
-    ImageIcon image = new ImageIcon("data\\img\\P.png");
+    //Atributtes:
+    private Almacen_Jugadores aJugadores;
+    private Almacen_Partidas aPartidas;
+    private Almacen_Palabras aPalabras;
+    private Jugador jugador1;
+    private Jugador jugador2;
+    private Jugador jModificar;
+    private JDialog dialogActual;
+    private final String ARCHIVO_AJUGADORES = "data\\bin\\Jugadores.data";
+    private final String ARCHIVO_APARTIDAS = "data\\bin\\Partidas.data";
+    private final String ARCHIVO_APALABRAS = "data\\bin\\Palabras.data";
+    private final String ARCHIVO_TXT = "data\\bin\\Clasificacion.txt";
+    private final ImageIcon image = new ImageIcon("data\\img\\P.png");
+    //End of Atributtes.
 
+    //Constructor:
     public VentanaPrincipal() {
+        initAtributtes();
         initComponents();
-        aJugadores = new Almacen_Jugadores();
-        aPartidas = new Almacen_Partidas();
-        aPalabras = new Almacen_Palabras();
-        locationRelativeTo();
-        setIcon(image);
+        initFrame();
     }
+    //End of constructor.
 
+    //Inits:
+    private void initAtributtes(){
+        jugador1=null;
+        jugador2=null;
+        jModificar=null;
+        dialogActual=null;
+        aJugadores=new Almacen_Jugadores();
+        aPartidas=new Almacen_Partidas();
+        aPalabras=new Almacen_Palabras();
+    }
     private void initComponents() {
-
         ventanaAdmin = new JDialog();
         fondoVA = new JPanel();
         tituloVA = new JTextField();
@@ -484,6 +493,7 @@ public class VentanaPrincipal extends JFrame {
         volverMJ.setBackground(new Color(248, 216, 216));
         volverMJ.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         volverMJ.setForeground(new Color(83, 119, 143));
+        volverMJ.setFocusable(false);
         volverMJ.setText("Volver");
         volverMJ.setBorder(null);
         volverMJ.addActionListener(new ActionListener() {
@@ -512,6 +522,7 @@ public class VentanaPrincipal extends JFrame {
         verInfoMJ.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         verInfoMJ.setForeground(Color.white);
         verInfoMJ.setText("Ver Info");
+        verInfoMJ.setFocusable(false);
         verInfoMJ.setBorder(null);
         verInfoMJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -542,6 +553,7 @@ public class VentanaPrincipal extends JFrame {
         actualizarListaMJ.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         actualizarListaMJ.setForeground(Color.white);
         actualizarListaMJ.setText("Actualizar");
+        actualizarListaMJ.setFocusable(false);
         actualizarListaMJ.setBorder(null);
         actualizarListaMJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -554,6 +566,7 @@ public class VentanaPrincipal extends JFrame {
         crearJugadorMJ.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         crearJugadorMJ.setForeground(Color.white);
         crearJugadorMJ.setText("Crear Jugador");
+        crearJugadorMJ.setFocusable(false);
         crearJugadorMJ.setBorder(null);
         crearJugadorMJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -566,6 +579,7 @@ public class VentanaPrincipal extends JFrame {
         clasificacionMJ.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         clasificacionMJ.setForeground(Color.white);
         clasificacionMJ.setText("Clasificación");
+        clasificacionMJ.setFocusable(false);
         clasificacionMJ.setBorder(null);
         clasificacionMJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -578,6 +592,7 @@ public class VentanaPrincipal extends JFrame {
         modificarJugadorMJ.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         modificarJugadorMJ.setForeground(Color.white);
         modificarJugadorMJ.setText("Modificar Jugador");
+        modificarJugadorMJ.setFocusable(false);
         modificarJugadorMJ.setBorder(null);
         modificarJugadorMJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -590,6 +605,7 @@ public class VentanaPrincipal extends JFrame {
         borrarJugadorMJ.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         borrarJugadorMJ.setForeground(Color.white);
         borrarJugadorMJ.setText("Borrar Jugador");
+        borrarJugadorMJ.setFocusable(false);
         borrarJugadorMJ.setBorder(null);
         borrarJugadorMJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -602,6 +618,7 @@ public class VentanaPrincipal extends JFrame {
         listaCompletaJugadores.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         listaCompletaJugadores.setForeground(Color.white);
         listaCompletaJugadores.setText("Lista Completa");
+        listaCompletaJugadores.setFocusable(false);
         listaCompletaJugadores.setBorder(null);
         listaCompletaJugadores.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -816,6 +833,7 @@ public class VentanaPrincipal extends JFrame {
         volverMJu.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         volverMJu.setForeground(new Color(83, 119, 143));
         volverMJu.setText("Volver");
+        volverMJu.setFocusable(false);
         volverMJu.setBorder(null);
         volverMJu.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -828,6 +846,7 @@ public class VentanaPrincipal extends JFrame {
         actualizarJugadorMJu.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         actualizarJugadorMJu.setForeground(Color.white);
         actualizarJugadorMJu.setText("Actualizar Jugador");
+        actualizarJugadorMJu.setFocusable(false);
         actualizarJugadorMJu.setBorder(null);
         actualizarJugadorMJu.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -883,6 +902,7 @@ public class VentanaPrincipal extends JFrame {
         verPartidasJugador.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         verPartidasJugador.setForeground(Color.white);
         verPartidasJugador.setText("Ver Partidas");
+        verPartidasJugador.setFocusable(false);
         verPartidasJugador.setBorder(null);
         verPartidasJugador.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -916,6 +936,7 @@ public class VentanaPrincipal extends JFrame {
         volverMP.setFont(new Font("Segoe Print", 1, 14)); // NOI18N
         volverMP.setForeground(new Color(83, 119, 143));
         volverMP.setText("Volver");
+        volverMP.setFocusable(false);
         volverMP.setBorder(null);
         volverMP.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -928,6 +949,7 @@ public class VentanaPrincipal extends JFrame {
         borrarPartida.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         borrarPartida.setForeground(Color.white);
         borrarPartida.setText("Borrar Partida");
+        borrarPartida.setFocusable(false);
         borrarPartida.setBorder(null);
         borrarPartida.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -940,6 +962,7 @@ public class VentanaPrincipal extends JFrame {
         partidasGlobalesMP.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         partidasGlobalesMP.setForeground(Color.white);
         partidasGlobalesMP.setText(" Partidas Globales");
+        partidasGlobalesMP.setFocusable(false);
         partidasGlobalesMP.setBorder(null);
         partidasGlobalesMP.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -952,6 +975,7 @@ public class VentanaPrincipal extends JFrame {
         alterarPartidaMP.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         alterarPartidaMP.setForeground(Color.white);
         alterarPartidaMP.setText("Alterar Fecha");
+        alterarPartidaMP.setFocusable(false);
         alterarPartidaMP.setBorder(null);
         alterarPartidaMP.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -964,6 +988,7 @@ public class VentanaPrincipal extends JFrame {
         infoPartidaMP.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         infoPartidaMP.setForeground(Color.white);
         infoPartidaMP.setText("Ver Info Partida");
+        infoPartidaMP.setFocusable(false);
         infoPartidaMP.setBorder(null);
         infoPartidaMP.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1087,6 +1112,7 @@ public class VentanaPrincipal extends JFrame {
         volverMPa.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         volverMPa.setForeground(new Color(83, 119, 143));
         volverMPa.setText("Volver");
+        volverMPa.setFocusable(false);
         volverMPa.setBorder(null);
         volverMPa.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1099,6 +1125,7 @@ public class VentanaPrincipal extends JFrame {
         verlistasMPa.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         verlistasMPa.setForeground(Color.white);
         verlistasMPa.setText("Ver Lista");
+        verlistasMPa.setFocusable(false);
         verlistasMPa.setBorder(null);
         verlistasMPa.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1111,6 +1138,7 @@ public class VentanaPrincipal extends JFrame {
         verPalabraMPa.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         verPalabraMPa.setForeground(Color.white);
         verPalabraMPa.setText("Ver Palabra");
+        verPalabraMPa.setFocusable(false);
         verPalabraMPa.setBorder(null);
         verPalabraMPa.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1123,6 +1151,7 @@ public class VentanaPrincipal extends JFrame {
         borrarPalabraMPa.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         borrarPalabraMPa.setForeground(Color.white);
         borrarPalabraMPa.setText("Borrar Palabra");
+        borrarPalabraMPa.setFocusable(false);
         borrarPalabraMPa.setBorder(null);
         borrarPalabraMPa.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1135,6 +1164,7 @@ public class VentanaPrincipal extends JFrame {
         modificarPalabraMPa.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         modificarPalabraMPa.setForeground(Color.white);
         modificarPalabraMPa.setText("Modificar Palabra");
+        modificarPalabraMPa.setFocusable(false);
         modificarPalabraMPa.setBorder(null);
         modificarPalabraMPa.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1147,6 +1177,7 @@ public class VentanaPrincipal extends JFrame {
         verPalabrasMPa.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         verPalabrasMPa.setForeground(Color.white);
         verPalabrasMPa.setText("Ver Palabras");
+        verPalabrasMPa.setFocusable(false);
         verPalabrasMPa.setBorder(null);
         verPalabrasMPa.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1207,6 +1238,7 @@ public class VentanaPrincipal extends JFrame {
         crearPalabraMPa.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         crearPalabraMPa.setForeground(Color.white);
         crearPalabraMPa.setText("Crear Palabra");
+        crearPalabraMPa.setFocusable(false);
         crearPalabraMPa.setBorder(null);
         crearPalabraMPa.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1589,6 +1621,7 @@ public class VentanaPrincipal extends JFrame {
         checkbox1.setFont(new Font("Segoe Print", 1, 14)); // NOI18N
         checkbox1.setForeground(new Color(83, 119, 143));
         checkbox1.setText("Acepto");
+        checkbox1.setFocusable(false);
         checkbox1.addChangeListener(new ChangeListener() {
             public void stateChanged(ChangeEvent evt) {
                 checkbox1StateChanged(evt);
@@ -1599,6 +1632,7 @@ public class VentanaPrincipal extends JFrame {
         botonNO.setBackground(new Color(83, 119, 143));
         botonNO.setFont(new Font("Segoe Print", 0, 16)); // NOI18N
         botonNO.setForeground(new Color(244, 241, 234));
+        botonNO.setFocusable(false);
         botonNO.setText("No Acepto");
         botonNO.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1611,6 +1645,7 @@ public class VentanaPrincipal extends JFrame {
         botonContinuar1.setFont(new Font("Segoe Print", 0, 16)); // NOI18N
         botonContinuar1.setForeground(new Color(244, 241, 234));
         botonContinuar1.setText("Continuar");
+        botonContinuar1.setFocusable(false);
         botonContinuar1.setEnabled(false);
         botonContinuar1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1682,6 +1717,7 @@ public class VentanaPrincipal extends JFrame {
         volverCD.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         volverCD.setForeground(new Color(83, 119, 143));
         volverCD.setText("Volver");
+        volverCD.setFocusable(false);
         volverCD.setBorder(null);
         volverCD.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1694,6 +1730,7 @@ public class VentanaPrincipal extends JFrame {
         archivoCD.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         archivoCD.setForeground(Color.white);
         archivoCD.setText("Archivo");
+        archivoCD.setFocusable(false);
         archivoCD.setBorder(null);
         archivoCD.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1714,6 +1751,7 @@ public class VentanaPrincipal extends JFrame {
         escribirClasificacionCD.setFont(new Font("Segoe Print", 1, 12)); // NOI18N
         escribirClasificacionCD.setForeground(Color.white);
         escribirClasificacionCD.setText("Escribir Clasificación en TXT");
+        escribirClasificacionCD.setFocusable(false);
         escribirClasificacionCD.setBorder(null);
         escribirClasificacionCD.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1763,6 +1801,7 @@ public class VentanaPrincipal extends JFrame {
         botonInicio.setFont(new Font("Segoe Print", 0, 20)); // NOI18N
         botonInicio.setForeground(Color.white);
         botonInicio.setText(" Inicio ");
+        botonInicio.setFocusable(false);
         botonInicio.setBorder(botonContinuar1.getBorder());
         botonInicio.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
@@ -1781,23 +1820,52 @@ public class VentanaPrincipal extends JFrame {
             layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
         );
-
-        pack();
     }
+    private void initFrame(){
+        pack();
+        this.setLocationRelativeTo(null);
+        ventanaAdmin.setLocationRelativeTo(this);
+        ventanaUsuario.setLocationRelativeTo(this);
+        comprobarContraseña.setLocationRelativeTo(this);
+        modificarJugadores.setLocationRelativeTo(this);
+        modificarJugador.setLocationRelativeTo(this);
+        modificarPartidas.setLocationRelativeTo(this);
+        modificarPalabras.setLocationRelativeTo(this);
+        introducirJugadores.setLocationRelativeTo(this);
+        crearJugador.setLocationRelativeTo(this);
+        seleccionJuego.setLocationRelativeTo(this);
+        ventanaTerminos.setLocationRelativeTo(this);
+        cargarDatos.setLocationRelativeTo(this);
+        this.setIconImage(image.getImage());
+        ventanaUsuario.setIconImage(image.getImage());
+        ventanaAdmin.setIconImage(image.getImage());
+        comprobarContraseña.setIconImage(image.getImage());
+        modificarJugadores.setIconImage(image.getImage());
+        modificarJugador.setIconImage(image.getImage());
+        modificarPartidas.setIconImage(image.getImage());
+        modificarPalabras.setIconImage(image.getImage());
+        introducirJugadores.setIconImage(image.getImage());
+        crearJugador.setIconImage(image.getImage());
+        seleccionJuego.setIconImage(image.getImage());
+        ventanaTerminos.setIconImage(image.getImage());
+        cargarDatos.setIconImage(image.getImage());
+    }
+    //End of inits.
 
+    //Buttons functions:
     private void cerrarVAActionPerformed(ActionEvent evt) {
         if (JOptionPane.showConfirmDialog(ventanaAdmin, "Estas a punto de salir sin guardar. Estas seguro de continuar ?", "Mensaje de advertencia", JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE) == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
     }
-
+    
     private void volverUsuarioVAActionPerformed(ActionEvent evt) {
         ventanaAdmin.setVisible(false);
         dialogActual = ventanaUsuario;
         ventanaUsuario.setVisible(true);
         fieldContraseñaCC.setText("");
     }
-
+    
     private void buttonIntroducirCCActionPerformed(ActionEvent evt) {
         String password = fieldContraseñaCC.getText();
         if (Administrador.ADMIN_PASSWORD.equals(password)) {
@@ -1825,14 +1893,18 @@ public class VentanaPrincipal extends JFrame {
         Jugador temp;
         if (aJugadores.existeJugador(nombre)) {
             temp = aJugadores.recuperarJugador(nombre);
-            if (!(temp.equals(jugador2)) && (temp != null)) {
-                jugador1 = temp;
-                areaInfoIJ.setText("Carga completa del jugador1 con nombre " + nombre);
-                marcadorJugadorVU1.setBackground(Color.GREEN);
-                jugarVU.setEnabled(true);
-                infoJugadorVU.setEnabled(true);
-            } else {
-                areaInfoIJ.setText("Los datos introducidos coinciden con el otro jugador,\npor favor utilize otro jugador.\nO hubo un error de recuperación\nde datos pruebe de nuevo.");
+            if(temp.getClave().equals(clave)){
+                if (!(temp.equals(jugador2)) && (temp != null)) {
+                    jugador1 = temp;
+                    areaInfoIJ.setText("Carga completa del jugador1 con nombre " + nombre);
+                    marcadorJugadorVU1.setBackground(Color.GREEN);
+                    jugarVU.setEnabled(true);
+                    infoJugadorVU.setEnabled(true);
+                } else {
+                    areaInfoIJ.setText("Los datos introducidos coinciden con el otro jugador,\npor favor utilize otro jugador.\nO hubo un error de recuperación\nde datos pruebe de nuevo.");
+                } 
+            }else{
+                areaInfoIJ.setText("La contraseña no coincide con el usuario vuelva a intentarlo");
             }
         } else {
             areaInfoIJ.setText("Los datos no coinciden con ningun Jugador, cargado fallido.");
@@ -1847,7 +1919,7 @@ public class VentanaPrincipal extends JFrame {
         fieldContraseñaIJ.setText("");
         introducirJugadores.setVisible(false);
         ventanaUsuario.setVisible(true);
-    }//GEN-LAST:event_buttonVolverIJActionPerformed
+    }
 
     private void introducirJugador2IJActionPerformed(ActionEvent evt) {
         String nombre = fieldNombreIJ.getText();
@@ -1855,14 +1927,18 @@ public class VentanaPrincipal extends JFrame {
         Jugador temp = null;
         if (aJugadores.existeJugador(nombre)) {
             temp = aJugadores.recuperarJugador(nombre);
-            if (!(temp.equals(jugador1)) && (temp != null)) {
-                jugador2 = temp;
-                areaInfoIJ.setText("Carga completa del jugador2 con nombre " + nombre);
-                marcadorJugadorVU2.setBackground(Color.GREEN);
-                jugarVU.setEnabled(true);
-                infoJugadorVU.setEnabled(true);
-            } else {
-                areaInfoIJ.setText("Los datos introducidos coinciden con el otro jugador,\npor favor utilize otro jugador.\nO hubo un error de recuperación\nde datos pruebe de nuevo.");
+            if(temp.getClave().equals(clave)){
+                if (!(temp.equals(jugador1)) && (temp != null)) {
+                    jugador2 = temp;
+                    areaInfoIJ.setText("Carga completa del jugador2 con nombre " + nombre);
+                    marcadorJugadorVU2.setBackground(Color.GREEN);
+                    jugarVU.setEnabled(true);
+                    infoJugadorVU.setEnabled(true);
+                } else {
+                    areaInfoIJ.setText("Los datos introducidos coinciden con el otro jugador,\npor favor utilize otro jugador.\nO hubo un error de recuperación\nde datos pruebe de nuevo.");
+                }
+            }else{
+                areaInfoIJ.setText("La contraseña no coincide con el usuario vuelva a intentarlo");
             }
         } else {
             areaInfoIJ.setText("Los datos no coinciden con ningun Jugador, cargado fallido.");
@@ -1889,7 +1965,7 @@ public class VentanaPrincipal extends JFrame {
             aPartidas.grabarFichero(ARCHIVO_APARTIDAS);
             aJugadores.grabarFichero(ARCHIVO_AJUGADORES);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(seleccionJuego, "Ha ocurrido un error:\n" + e.toString(), "Error al borrar jugador", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(seleccionJuego, "Ha ocurrido un error al seleccionar el número de letras del rosco:\n" + e.toString(), "Error al introducir letras al rosco", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -1899,7 +1975,7 @@ public class VentanaPrincipal extends JFrame {
             Entrenamiento entrenamineto = new Entrenamiento(Integer.parseInt(JOptionPane.showInputDialog(null, "Introduzca el numero de letras que tendra el rosco. Rango posible [1-25]")), Entrenamiento.BENEFICIO_ESTANDAR, aPalabras);
             entrenamineto.entrenar(ventanaUsuario, jugador1);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(seleccionJuego, "Ha ocurrido un error al borrar al jugador:\n" + e.toString(), "Error al borrar jugador", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(seleccionJuego, "Ha ocurrido un error al seleccionar el número de letras del rosco:\n" + e.toString(), "Error al introducir letras al rosco", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -2057,6 +2133,7 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void volverMPaActionPerformed(ActionEvent evt) {
+        modificarPalabras.setVisible(false);
         ventanaAdmin.setVisible(true);
         fieldPalabraMPa.setText("");
         fieldDef1MPa.setText("");
@@ -2083,7 +2160,7 @@ public class VentanaPrincipal extends JFrame {
         areaPantallaMPa.setText(aPalabras.stringAlmacenPalabras());
     }
 
-    private void modificarPalabraMPaActionPerformed(ActionEvent evt) {//GEN-FIRST:event_modificarPalabraMPaActionPerformed
+    private void modificarPalabraMPaActionPerformed(ActionEvent evt) {
         String palabra = fieldPalabraMPa.getText();
         String def1 = fieldDef1MPa.getText();
         String def2 = fieldDef2MPa.getText();
@@ -2160,15 +2237,13 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void adminVUActionPerformed(ActionEvent evt) {
-
         ventanaUsuario.setVisible(false);
         comprobarContraseña.setVisible(true);
-
     }
 
-    private void botonInicioActionPerformed(ActionEvent evt) {//GEN-FIRST:event_botonInicioActionPerformed
+    private void botonInicioActionPerformed(ActionEvent evt) {
+        this.setVisible(false);
         ventanaTerminos.setVisible(true);
-
         dialogActual = ventanaTerminos;
         this.setState(this.ICONIFIED);
         this.setDefaultCloseOperation(0);
@@ -2178,7 +2253,6 @@ public class VentanaPrincipal extends JFrame {
         } catch (FileNotFoundException e) {
             //Si no se encuentran es que aun no existen, los creamos
             JOptionPane.showMessageDialog(ventanaUsuario, "Actualmente no hay informacion cargada, el administrador debera revisar los datos cargados para que se pueda jugar correctamente", "Aviso al cargar", JOptionPane.WARNING_MESSAGE);
-
         } catch (Exception e) {
             //Cualquier otro error lo comunicamos y salimos
             JOptionPane.showMessageDialog(ventanaUsuario, "Ha ocurrido un error al cargar la informacion necesaria para jugar, por favor, vuelva a intentarlo. Informe del error:\n" + e.toString(), "Error al cargar", JOptionPane.ERROR_MESSAGE);
@@ -2232,7 +2306,7 @@ public class VentanaPrincipal extends JFrame {
     private void botonContinuar1ActionPerformed(ActionEvent evt) {
         ventanaTerminos.dispose();
         ventanaUsuario.setVisible(true);
-        ImageIcon imageRosco = new ImageIcon("src\\main\\java\\Imagenes\\fotoRoscoPpal.png");
+        ImageIcon imageRosco = new ImageIcon("data\\img\\fotoRoscoPpal.png");
         Icon iconoF1 = new ImageIcon(imageRosco.getImage().getScaledInstance(labelFoto.getWidth(), labelFoto.getHeight(), Image.SCALE_DEFAULT));
         labelFoto.setIcon(iconoF1);
         this.repaint();
@@ -2342,192 +2416,44 @@ public class VentanaPrincipal extends JFrame {
         areaPantallaMP.setText(sb.toString());
         verPartidasJugadorActionPerformed(evt);
     }
+    //End of Button functions.
 
-    private void locationRelativeTo() {
-        this.setLocationRelativeTo(null);
-        ventanaAdmin.setLocationRelativeTo(this);
-        ventanaUsuario.setLocationRelativeTo(this);
-        comprobarContraseña.setLocationRelativeTo(this);
-        modificarJugadores.setLocationRelativeTo(this);
-        modificarJugador.setLocationRelativeTo(this);
-        modificarPartidas.setLocationRelativeTo(this);
-        modificarPalabras.setLocationRelativeTo(this);
-        introducirJugadores.setLocationRelativeTo(this);
-        crearJugador.setLocationRelativeTo(this);
-        seleccionJuego.setLocationRelativeTo(this);
-        ventanaTerminos.setLocationRelativeTo(this);
-        cargarDatos.setLocationRelativeTo(this);
-    }
-
-    private void setIcon(ImageIcon image) {
-        this.setIconImage(image.getImage());
-        ventanaUsuario.setIconImage(image.getImage());
-        ventanaAdmin.setIconImage(image.getImage());
-        comprobarContraseña.setIconImage(image.getImage());
-        modificarJugadores.setIconImage(image.getImage());
-        modificarJugador.setIconImage(image.getImage());
-        modificarPartidas.setIconImage(image.getImage());
-        modificarPalabras.setIconImage(image.getImage());
-        introducirJugadores.setIconImage(image.getImage());
-        crearJugador.setIconImage(image.getImage());
-        seleccionJuego.setIconImage(image.getImage());
-        ventanaTerminos.setIconImage(image.getImage());
-        cargarDatos.setIconImage(image.getImage());
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private JButton IntroducirJugador1IJ;
-    private JButton actualizarJugadorMJu;
-    private JButton actualizarListaMJ;
-    private JButton adminVU;
-    private JButton alterarPartidaMP;
-    private JButton archivoCD;
-    private JTextArea areaHistMJu;
-    private JTextArea areaInfoIJ;
-    private JTextArea areaPantallaCJ;
-    private JTextArea areaPantallaMP;
-    private JTextArea areaPantallaMPa;
-    private JTextArea areaPantallaVA;
-    private JTextArea areaVU;
-    private JPanel bordeContraseñaIJ;
-    private JPanel bordePantallaCJ;
-    private JPanel bordePantallaMJ;
-    private JPanel bordePantallaMP;
-    private JPanel bordePantallaMPa;
-    private JButton borrarJugadorMJ;
-    private JButton borrarPalabraMPa;
-    private JButton borrarPartida;
-    private JButton botonContinuar1;
-    private JButton botonInicio;
-    private JButton botonNO;
-    private JButton buttonCancelarCC;
-    private JButton buttonEntrenamiento;
-    private ButtonGroup buttonGroup1;
-    private JButton buttonIntroducirCC;
-    private JButton buttonPartidaSJ;
-    private JButton buttonVolverIJ;
-    private JDialog cargarDatos;
-    private JButton cargarDatosVA;
-    private JButton cargarJugadoresVU;
-    private JButton cerrarVA;
-    private JButton cerrarVU;
-    private JCheckBox checkAdminCJ;
-    private JCheckBox checkbox1;
-    private JButton clasificacionMJ;
-    private JDialog comprobarContraseña;
-    private JPanel contornoVA;
-    private JPanel contornoVU;
-    private JDialog crearJugador;
-    private JButton crearJugadorCJ;
-    private JButton crearJugadorMJ;
-    private JButton crearPalabraMPa;
-    private JButton escribirClasificacionCD;
-    private JTextField fieldAñoMP;
-    private JTextField fieldClaveCJ;
-    private JTextField fieldClaveMJu;
-    private JTextField fieldContraseñaCC;
-    private JTextField fieldContraseñaIJ;
-    private JTextField fieldDef1MPa;
-    private JTextField fieldDef2MPa;
-    private JTextField fieldDiaMP;
-    private JTextField fieldHoraMP;
-    private JTextField fieldMesMP;
-    private JTextField fieldMinutoMP;
-    private JTextField fieldNombreCJ;
-    private JTextField fieldNombreIJ;
-    private JTextField fieldNombreMJu;
-    private JTextField fieldPalabraMPa;
-    private JTextField fieldPuntosMJu;
-    private JPanel fondoAreaVP2;
-    private JPanel fondoCC;
-    private JPanel fondoCJ;
-    private JPanel fondoIJ;
-    private JPanel fondoMJ;
-    private JPanel fondoMJu;
-    private JPanel fondoMP;
-    private JPanel fondoMPa;
-    private JPanel fondoSJ;
-    private JPanel fondoVA;
-    private JPanel fondoVU;
-    private JButton guardarDatosVA;
-    private JButton infoJugadorVU;
-    private JButton infoPartidaMP;
-    private JButton introducirJugador2IJ;
-    private JDialog introducirJugadores;
-    private JLabel jLabel1;
-    private JLabel jLabel15;
-    private JLabel jLabel16;
-    private JLabel jLabel2;
-    private JLabel jLabel3;
-    private JLabel jLabel4;
-    private JLabel jLabel5;
-    private JLabel jLabel6;
-    private JLabel jLabel7;
-    private JPanel jPanel1;
-    private JPanel jPanel4;
-    private JPanel jPanel5;
-    private JPanel jPanel6;
-    private JScrollPane jScrollPane10;
-    private JScrollPane jScrollPane11;
-    private JScrollPane jScrollPane12;
-    private JScrollPane jScrollPane13;
-    private JScrollPane jScrollPane14;
-    private JScrollPane jScrollPane15;
-    private JScrollPane jScrollPane2;
-    private JScrollPane jScrollPane3;
-    private JScrollPane jScrollPane4;
-    private JScrollPane jScrollPane5;
-    private JScrollPane jScrollPane6;
-    private JScrollPane jScrollPane7;
-    private JScrollPane jScrollPane8;
-    private JScrollPane jScrollPane9;
-    private JTextArea jTextArea2;
-    private JButton jugarVU;
-    private JLabel labelCopyrights;
-    private JLabel labelCopyrights1;
-    private JLabel labelCopyrights10;
-    private JLabel labelCopyrights11;
-    private JLabel labelCopyrights12;
-    private JLabel labelCopyrights2;
-    private JLabel labelCopyrights3;
-    private JLabel labelCopyrights4;
-    private JLabel labelCopyrights5;
-    private JLabel labelCopyrights6;
-    private JLabel labelCopyrights7;
-    private JLabel labelCopyrights8;
-    private JLabel labelCopyrights9;
-    private JLabel labelFoto;
-    private JLabel labelFotoAdmin;
-    private JLabel labelInfo;
-    private JLabel labelLogo;
-    private JLabel labelTitulo;
-    private JList<String> listJugadoresMJ;
-    private JList<String> listJugadoresMP;
-    private JList<String> listLetrasMPa;
-    private JList<String> listPalabrasMPa;
-    private JList<String> listPartidasMP;
-    private JButton listaCompletaJugadores;
-    private JLabel marcadorJugadorVU1;
-    private JLabel marcadorJugadorVU2;
-    private JPanel marcoContraseñaCC;
-    private JButton modJugadoresVA;
-    private JButton modPalabrasVA;
-    private JButton modPartidasVA;
-    private JDialog modificarJugador;
-    private JButton modificarJugadorMJ;
-    private JDialog modificarJugadores;
-    private JButton modificarPalabraMPa;
-    private JDialog modificarPalabras;
-    private JDialog modificarPartidas;
-    private JPanel nordeNombreIJ;
-    private JTextArea pantallaInfoMJ;
-    private JButton partidasGlobalesMP;
-    private JRadioButton radioJugadoresCD;
-    private JRadioButton radioPalabrasCD;
-    private JDialog seleccionJuego;
-    private JLabel tituloAlterarMP,tituloAlterarMP1,tituloAlterarMP2,tituloCJ,tituloClaveCJ,tituloClaveMJu,tituloHistMJu,tituloIJ,tituloJugadorVU1,tituloJugadorVU2,tituloMJ,tituloMPa,tituloNombreCJ,tituloNombreMJu,tituloPuntosMJu;
-    private JTextField tituloVA,tituloVU;
+    //Components:
     private JDialog ventanaAdmin,ventanaTerminos,ventanaUsuario;
-    private JButton verInfoMJ,verPalabraMPa,verPalabrasMPa,verPartidasJugador,verlistasMPa,volverCD,volverCJ,volverMJ,volverMJu,volverMP,volverMPa,volverSJ,volverUsuarioVA;
-    // End of variables declaration//GEN-END:variables
+    private JDialog cargarDatos;
+    private JDialog comprobarContraseña;
+    private JDialog crearJugador;
+    private JDialog introducirJugadores;
+    private JDialog modificarJugador,modificarJugadores,modificarPalabras,modificarPartidas,seleccionJuego;
+    private JLabel jLabel1,jLabel15,jLabel16,jLabel2,jLabel3,marcadorJugadorVU1,marcadorJugadorVU2;
+    private JLabel jLabel4,jLabel5,jLabel6,jLabel7,labelCopyrights1,labelCopyrights10;
+    private JLabel labelCopyrights,labelCopyrights11,labelCopyrights12,labelCopyrights2;
+    private JLabel labelCopyrights3,labelCopyrights4,labelCopyrights5,labelCopyrights6;
+    private JLabel labelCopyrights7,labelCopyrights8,labelCopyrights9,labelFoto,labelFotoAdmin;
+    private JLabel labelInfo,labelLogo,labelTitulo,tituloAlterarMP,tituloAlterarMP1,tituloAlterarMP2;
+    private JLabel tituloCJ,tituloClaveCJ,tituloClaveMJu,tituloHistMJu,tituloIJ,tituloJugadorVU1;
+    private JLabel tituloJugadorVU2,tituloMJ,tituloMPa,tituloNombreCJ,tituloNombreMJu,tituloPuntosMJu;
+    private JPanel bordeContraseñaIJ,bordePantallaCJ,bordePantallaMJ,bordePantallaMP,bordePantallaMPa;
+    private JPanel fondoAreaVP2,fondoCC,fondoCJ,fondoIJ,fondoMJ,fondoMJu,fondoMP,fondoMPa,fondoSJ,fondoVA,fondoVU;
+    private JPanel nordeNombreIJ,marcoContraseñaCC,contornoVA,contornoVU,jPanel4,jPanel5,jPanel6,jPanel1;
+    private JScrollPane jScrollPane10,jScrollPane11,jScrollPane12,jScrollPane13,jScrollPane14,jScrollPane15;
+    private JScrollPane jScrollPane2,jScrollPane3,jScrollPane4,jScrollPane5,jScrollPane6,jScrollPane7,jScrollPane8,jScrollPane9;
+    private JTextField tituloVA,tituloVU,fieldMesMP,fieldMinutoMP,fieldNombreCJ,fieldNombreIJ;
+    private JTextField fieldAñoMP,fieldClaveCJ,fieldClaveMJu,fieldContraseñaCC,fieldContraseñaIJ;
+    private JTextField fieldNombreMJu,fieldPalabraMPa,fieldPuntosMJu,fieldDef1MPa,fieldDef2MPa,fieldDiaMP,fieldHoraMP;
+    private JTextArea jTextArea2,areaPantallaMPa,areaPantallaVA,areaVU;
+    private JTextArea pantallaInfoMJ,areaHistMJu,areaInfoIJ,areaPantallaCJ,areaPantallaMP;
+    private JButton IntroducirJugador1IJ,actualizarJugadorMJu,actualizarListaMJ,adminVU,modJugadoresVA;
+    private JButton buttonIntroducirCC,buttonPartidaSJ,buttonVolverIJ,alterarPartidaMP,archivoCD,escribirClasificacionCD;
+    private JButton cargarDatosVA,cargarJugadoresVU,cerrarVA,cerrarVU,clasificacionMJ,modPartidasVA,crearJugadorMJ;
+    private JButton guardarDatosVA,infoJugadorVU,infoPartidaMP,introducirJugador2IJ,modPalabrasVA,crearJugadorCJ;
+    private JButton listaCompletaJugadores,verInfoMJ,verPalabraMPa,verPalabrasMPa,verPartidasJugador;
+    private JButton verlistasMPa,volverCD,volverCJ,volverMJ,volverMJu,volverMP,volverMPa,volverSJ,crearPalabraMPa;
+    private JButton volverUsuarioVA,modificarPalabraMPa,modificarJugadorMJ,jugarVU,partidasGlobalesMP;
+    private JButton borrarJugadorMJ,borrarPalabraMPa,borrarPartida,botonContinuar1,botonInicio,botonNO,buttonCancelarCC,buttonEntrenamiento;
+    private ButtonGroup buttonGroup1;
+    private JCheckBox checkAdminCJ,checkbox1;
+    private JList<String> listJugadoresMJ,listJugadoresMP,listLetrasMPa,listPalabrasMPa,listPartidasMP;
+    private JRadioButton radioJugadoresCD,radioPalabrasCD;
+    //End of components
 }
