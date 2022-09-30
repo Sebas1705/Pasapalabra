@@ -2,9 +2,8 @@ package com.sebss.Ayudas;
 
 import com.sebss.Exceptions.EAyudaNoValidaException;
 import com.sebss.Palabras.Palabra;
-import java.io.Serializable;
 
-public class Letras extends Pista implements Serializable{
+public class Letras extends Pista {
     
     //Constantes:
     private static final double PORCENTAJE_MOSTRADO = 0.33;

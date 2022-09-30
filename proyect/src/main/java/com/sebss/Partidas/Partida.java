@@ -132,8 +132,6 @@ public class Partida implements Serializable {
                 + "| Fecha: " + this.getFecha().toString() + " |\n"
                 + "| Jugador1: " + this.getJugador1().getNombre() + " |\n"
                 + "| Jugador2: " + this.getJugador2().getNombre() + " |\n"
-                + "| Rosco1: " + this.getRosco1().toString() + " |\n"
-                + "| Rosco2: " + this.getRosco2().toString() + " |\n"
                 + "+--------------------------------------+\n"
                 + "\n");
     }

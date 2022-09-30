@@ -55,10 +55,6 @@ public class PanelEntrenar extends javax.swing.JDialog {
         definicion.setText("Empieza por A:\n" + entrenamiento.getRosco().getPalabras()[0].getDef1().toString());
     }
 
-    private PanelEntrenar(JDialog jDialog, boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();

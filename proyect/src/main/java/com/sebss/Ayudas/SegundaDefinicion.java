@@ -2,9 +2,8 @@ package com.sebss.Ayudas;
 
 import com.sebss.Exceptions.EAyudaNoValidaException;
 import com.sebss.Palabras.Palabra;
-import java.io.Serializable;
 
-public class SegundaDefinicion extends Pista implements Serializable{
+public class SegundaDefinicion extends Pista {
     
     //Variables:
     

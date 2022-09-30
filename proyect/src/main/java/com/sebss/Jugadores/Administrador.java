@@ -1,9 +1,10 @@
 package com.sebss.Jugadores;
 
-import com.sebss.Exceptions.EJugadorNoValidoException;
 import java.io.Serializable;
 
-public class Administrador extends Jugador implements Serializable{
+import com.sebss.Exceptions.EJugadorNoValidoException;
+
+public class Administrador extends Jugador implements Serializable {
     
     //Variables:
     public static final String ADMIN_PASSWORD = "123";

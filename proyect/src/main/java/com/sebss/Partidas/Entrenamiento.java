@@ -6,10 +6,8 @@ import com.sebss.Interfaz.PanelEntrenar;
 import com.sebss.Jugadores.Jugador;
 import com.sebss.Palabras.Palabra;
 import static com.sebss.Partidas.Rosco.ABECEDARIO;
-import java.awt.Color;
 import java.io.Serializable;
 import javax.swing.JDialog;
-import javax.swing.JLabel;
 
 public class Entrenamiento implements Serializable{
     

@@ -9,6 +9,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.*;
@@ -1934,17 +1935,10 @@ public class VentanaPrincipal extends JFrame {
                     marcadorJugadorVU2.setBackground(Color.GREEN);
                     jugarVU.setEnabled(true);
                     infoJugadorVU.setEnabled(true);
-                } else {
-                    areaInfoIJ.setText("Los datos introducidos coinciden con el otro jugador,\npor favor utilize otro jugador.\nO hubo un error de recuperación\nde datos pruebe de nuevo.");
-                }
-            }else{
-                areaInfoIJ.setText("La contraseña no coincide con el usuario vuelva a intentarlo");
-            }
-        } else {
-            areaInfoIJ.setText("Los datos no coinciden con ningun Jugador, cargado fallido.");
-        }
-        if (jugador1 != null)
-            buttonPartidaSJ.setEnabled(true);
+                } else areaInfoIJ.setText("Los datos introducidos coinciden con el otro jugador,\npor favor utilize otro jugador.\nO hubo un error de recuperación\nde datos pruebe de nuevo.");
+            } else areaInfoIJ.setText("La contraseña no coincide con el usuario vuelva a intentarlo");
+        } else areaInfoIJ.setText("Los datos no coinciden con ningun Jugador, cargado fallido.");
+        if (jugador1 != null) buttonPartidaSJ.setEnabled(true);
     }
 
     private void volverSJActionPerformed(ActionEvent evt) {
@@ -1958,8 +1952,8 @@ public class VentanaPrincipal extends JFrame {
             Partida partidaActual = new Partida(Partida.PRECIO_ESTANDAR, Integer.parseInt(JOptionPane.showInputDialog(null, "Introduzca el numero de letras que tendra el rosco. Rango posible [1-25]")), jugador1, jugador2, aPalabras);
             partidaActual.jugar(ventanaUsuario);
             // Restamos los ptos por juagar partida
-            jugador1.setPuntos(jugador1.getPuntos() - Partida.PRECIO_ESTANDAR);
-            jugador2.setPuntos(jugador2.getPuntos() - Partida.PRECIO_ESTANDAR);
+            jugador1.setPuntos(jugador1.getPuntos()-Partida.PRECIO_ESTANDAR);
+            jugador2.setPuntos(jugador2.getPuntos()-Partida.PRECIO_ESTANDAR);
             //Guardamos la partida en el registro
             aPartidas.añadirPartida(partidaActual);
             aPartidas.grabarFichero(ARCHIVO_APARTIDAS);
@@ -2037,6 +2031,9 @@ public class VentanaPrincipal extends JFrame {
 
     private void borrarJugadorMJActionPerformed(ActionEvent evt) {
         String nombre = listJugadoresMJ.getSelectedValue();
+        Jugador j = aJugadores.recuperarJugador(nombre);
+        ArrayList<Partida> partidas = j.getPartidasJugadas();
+        for(Partida p : partidas) aPartidas.borrarPartida(p);
         aJugadores.borrarJugador(aJugadores.recuperarJugador(nombre));
         this.actualizarListaMJActionPerformed(evt);
     }
@@ -2242,10 +2239,10 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void botonInicioActionPerformed(ActionEvent evt) {
-        this.setVisible(false);
+        this.setVisible(true);
         ventanaTerminos.setVisible(true);
         dialogActual = ventanaTerminos;
-        this.setState(this.ICONIFIED);
+        this.setState(Frame.ICONIFIED);
         this.setDefaultCloseOperation(0);
         this.botonInicio.setEnabled(false);
         try {

@@ -2,9 +2,8 @@ package com.sebss.Ayudas;
 
 import com.sebss.Exceptions.EAyudaNoValidaException;
 import com.sebss.Palabras.Palabra;
-import java.io.Serializable;
 
-public abstract class Pista extends Ayuda implements Serializable{
+public abstract class Pista extends Ayuda {
     
     //Constantes:
     public static final int PRECIO_ESTANDAR = 5;
